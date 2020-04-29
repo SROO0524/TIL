@@ -6,7 +6,7 @@
 
 
 
-[Object_Oriented_Programming](https://github.com/SROO0524/TIL/blob/master/Swift_문법/Object-Oriented Programming_0421.md)
+[Object_Oriented_Programming](https://github.com/SROO0524/TIL/blob/master/Swift_%EB%AC%B8%EB%B2%95/Object-Oriented%20Programming_0421.md)
 
 
 
@@ -26,11 +26,13 @@
 
 
 
-[UIviewController to AlertController.md](https://github.com/SROO0524/TIL/blob/master/Swift_Practice/UIviewController to AlertController.md)
+[UIviewController to AlertController](https://github.com/SROO0524/TIL/blob/master/Swift_Practice/UIviewController%20to%20AlertController.md)
 
 
 
-[UIviewController to AlertViewControlle]: https://github.com/SROO0524/TIL/blob/master/Swift_Practice/UIviewController%20to%20AlertController.md	"UIviewController to AlertViewController"
+
+
+
 
 
 
