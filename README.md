@@ -6,7 +6,7 @@
 
 
 
-[Object-Oriented Programming](https://github.com/SROO0524/TIL/blob/master/Swift_문법/Object-Oriented Programming_0421.md)
+[Object_Oriented_Programming](https://github.com/SROO0524/TIL/blob/master/Swift_문법/Object-Oriented Programming_0421.md)
 
 [Swift_If_Tuples_ControlTransfer](https://github.com/SROO0524/TIL/blob/master/Swift_문법/Swift_IF_Tuples_ControlTransfer_0427.md)
 
