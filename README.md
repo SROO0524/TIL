@@ -19,7 +19,7 @@
 
 ## Swift 문법(알고리즘)_Practice
 
-[사전과제시험 풀이_0409](https://github.com/SROO0524/TIL/blob/master/Swift_문법/UIViewController_0427.md)
+[사전과제시험 풀이_0409](https://github.com/SROO0524/TIL/blob/master/Swift_%EB%AC%B8%EB%B2%95/%EC%82%AC%EC%A0%84%EA%B3%BC%EC%A0%9C%EC%8B%9C%ED%97%98_0409.md)
 
 
 ## Swift UI Practice
