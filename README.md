@@ -17,8 +17,12 @@
 [UIViewController](https://github.com/SROO0524/TIL/blob/master/Swift_문법/UIViewController_0427.md)
 
 
+## Swift 문법(알고리즘)_Practice
 
-## Swift Practice
+[사전과제시험 풀이_0409](https://github.com/SROO0524/TIL/blob/master/Swift_문법/UIViewController_0427.md)
+
+
+## Swift UI Practice
 
 
 
