@@ -16,6 +16,10 @@
 
 [UIViewController](https://github.com/SROO0524/TIL/blob/master/Swift_문법/UIViewController_0427.md)
 
+[Type Casting](https://github.com/SROO0524/TIL/blob/master/Swift_%EB%AC%B8%EB%B2%95/Type%20Casting%20_%200504.md)
+
+
+
 
 ## Swift 문법(알고리즘)_Practice
 
@@ -35,6 +39,12 @@
 
 
 [UIViewController_Modal 화면 전환](https://github.com/SROO0524/TIL/blob/master/Swift_Practice/UIViewcontroller_modal%20%ED%99%94%EB%A9%B4%20%EC%A0%84%ED%99%98.md)
+
+
+## Test
+
+[1st_Test_Review](https://github.com/SROO0524/TIL/blob/master/Swift_%EB%AC%B8%EB%B2%95/1st_test_review.md)
+
 
 
 
