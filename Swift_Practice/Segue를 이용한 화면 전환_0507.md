@@ -3,13 +3,13 @@
 * 화면 A -> B로 이동하는 버튼과 기능 구현 후 B -> A로 가는 버튼과 기능도 구현하기. 
   1. 스토리보드에 ViewController 를 두개 만든 후 각 화면에 버튼 하나씩 배치.
 
-![Segue_화면전환기초_1](/Users/kimmidum/Desktop/Segue_화면전환기초_1.png)
+![Segue_화면전환기초_1](https://github.com/SROO0524/TIL/blob/master/Image/Segue_화면전환기초_1.png)
 
 
 
 		2. 스토리보드의 화면 B와 연결되는 새로운 ViewController.swift 생성
 
-![Segue_화면전환기초_2](/Users/kimmidum/Desktop/Segue_화면전환기초_2.png)
+![Segue_화면전환기초_2](https://github.com/SROO0524/TIL/blob/master/Image/Segue_화면전환기초_2.png)
 
 ​		
 
@@ -37,7 +37,11 @@
 
 		6.  Unwind Segue 생성 후 화면 B에 있는 Button을 Ctrl 을 누른 후 뷰컨트롤러 위쪽에 있는 Exit 버튼에 가져다 댄 후 ViewController.swift에서 생성한 unwind @IBAction에 연결시킴. 연결여부 확인은 아래와 같이 함
 
-     ![Segue_화면전환기초_3](/Users/kimmidum/Desktop/Segue_화면전환기초_3.png)
+     ![Segue_화면전환기초_3](https://github.com/SROO0524/TIL/blob/master/Image/Segue_화면전환기초_3.png)
+
+     
+
+     
 
      
 
