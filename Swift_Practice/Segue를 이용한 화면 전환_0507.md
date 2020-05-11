@@ -14,7 +14,7 @@
 
 ​		
 
-3) 스토리보드 화면 A에 있는 Button 을 화면 B로 Control 클릭후 끌어서 Segue를 Show 로 연결
+v 3) 스토리보드 화면 A에 있는 Button 을 화면 B로 Control 클릭후 끌어서 Segue를 Show 로 연결
 
 4)  화면 B로 이동 후 다시 화면 A로 이동하는 버튼(Go to A)을 화면 B에 생성
 
