@@ -115,3 +115,37 @@ class SecondViewController: UIVIewController {
 }
 ```
 
+
+
+### ***<u>3. 화면 A 에 있는 PlusOne/PlusTen 버튼을 누를때마다 화면 B의 라벨에 해당 수가 더해져 반환되는 화면 전환</u>*** 
+
+
+
+1) SecondVC 에 화면B의 라벨에 반환할 텍스트 변수를 지정
+
+```swift
+import UIKit
+
+class SecondViewController: UIViewController {
+  
+    @IBOutlet weak var label : UILabel!
+  //@IBOulet label 에 화면 B의 라벨을 연결해준후 
+    var count1 = 0
+  // label 에 반환할 count 변수를 지정해준다.   
+    
+    override func viewDidLoad() {
+    super.viewDidLoad()
+    
+
+    label.text = "\(count1)"
+    // label에 찍힐 텍스트는 count1 이 텍스트로 표기됨. 
+
+    }
+    
+    
+} 
+```
+
+
+
+2) FirstVC 에 Should
