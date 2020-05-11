@@ -117,7 +117,7 @@ class SecondViewController: UIVIewController {
 
 
 
-### ***<u>3. 화면 A 에 있는 PlusOne/PlusTen 버튼을 누를때마다 화면 B의 라벨에 해당 수가 더해져 반환되는 화면 전환</u>*** 
+### ***<u>3. 화면 A 에 있는 PlusOne/PlusTen 버튼을 누를때마다 화면 B의 라벨에 해당 수가 더해져 반환되는 화면 전환</u>*** (40까지 도달했을때 실행 중지)
 
 
 
@@ -148,4 +148,40 @@ class SecondViewController: UIViewController {
 
 
 
-2) FirstVC 에 Should
+2) FirstVC 에 shouldPerformSegue 메소드와 Prepare 메소드 순서로 코드 작성. 
+
+* **shouldPerformSegue() :** 특정 화면 전환에 대한 제어를 하게 되고 상태에 따른 실행여부를 컨트롤 한다. 
+* **prepare() :** 메서드가 실행되고, 액션이 실행된다. 
+
+```swift
+import UIKit
+
+final class FirstViewController : UIViewController {
+   // count 변수 지정
+    var count = 0
+  
+    // shouldPerformSegue() 메서드를 사용하여 40까지 도달하면 실행 중지 하도록 설정.(특정 조건이 없으면 사용하지 않아도 무방하다. )
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
+        let plus = identifier == "PlusOne" ? 1 : 10
+        return count + plus <= 40
+    } 
+    
+    // prepare() 메서드로 실제 액션 실행. 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let secondVC = segue.destination as? SecondViewController,
+            let identifier = segue.identifier
+            else { return }
+        
+        count += (identifier == "PlusOne") ? 1 : 10
+        secondVC.count1 = count
+        
+        }
+    
+        @IBAction private func unwindToFirstController(_ unwindSegue: UIStoryboardSegue) {
+            }
+
+    }
+```
+
