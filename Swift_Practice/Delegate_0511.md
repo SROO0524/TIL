@@ -27,7 +27,7 @@ final class CustomView: UIView {
   }
 }
 
-//위임 받는 객체 (실제 기능을 구현할 수 있는 객체 )
+//위임 받는 객체 (실제로 구현할 수 있는 기능을 만들어 주는것)
 
 class ViewController: UIviewController, CustomViewDelegate {
   @IBOulet weak var customView : CustomView!
@@ -38,7 +38,8 @@ class ViewController: UIviewController, CustomViewDelegate {
   }
   
   func colorForBackground(_ newColor: UIColor?) -> UIColor {
-    guard let color
+    guard let color = newColor else {return .gray}
+    return color == .green ? .blue : color
   }
 }
 
