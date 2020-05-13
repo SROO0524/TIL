@@ -78,4 +78,66 @@ class ViewController: UIviewController, CustomViewDelegate {
 
 ### 1-1 delegate 프로토콜과 프로퍼티를 firstVC 에 정의하는 방법으로 구현
 
-1. ViewController 2
+1. ViewController를 스토리보드에 2개 만들고,UIViewController 2개 구현 한 후  FirstVC에는 텍스트 필드 만들고, 두SecondVC 에는 Label 올린 후 @IBOulet 으로 연결해 둔다.
+
+2. ViewController.swift에 아래와 같이 코드를 구현한다. 
+
+   ```swift
+   import UIKit
+   
+   protocol ViewControllerDelegate : class {
+       func textChange(_ newWord: String)
+   }
+   
+   // protocol을 통해 메소드를 정의 해준다. func textChang는 실제 구현할 함수를 미리 정의.
+   
+   
+   class ViewController: UIViewController, UITextFieldDelegate, SecondViewDelegate {
+       weak var delegate : ViewControllerDelegate?
+     // ViewControllerDelegate 타입의 delegate 변수 선언. (여기서는 아직 ViewControllerDelegate를 채택해서 쓰겠다고 하지 않은 상태임!)
+       
+       @IBOutlet weak var secondLabel: UILabel!
+       @IBOutlet weak var textField: UITextField!
+       
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           textField.delegate = self
+           
+       }
+   
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           return true
+       }
+       
+       func textFieldDidEndEditing(_ textField: UITextField) {
+           guard let text = textField.text else {
+               return
+           }; delegate?.textChange(text)
+       }
+       
+       func secondTextChange(_ secondNewWord: String) {
+           secondLabel.text = secondNewWord
+       }
+    
+   //    @IBAction func unwindToFirstVC(_ segue: UIStoryboard) {
+   //    }
+       
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           super.prepare(for: segue, sender: sender)
+           
+           guard let secondVC = segue.destination as? SecondViewController else { return }
+           secondVC.delegate = self
+           
+       }
+       
+       @IBAction func unwindToFirst(_ unwindSegue: UIStoryboardSegue) {
+           let sourceViewController = unwindSegue.source
+           
+       }
+   }
+   
+   
+   ```
+
+   
