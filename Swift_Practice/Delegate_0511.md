@@ -92,12 +92,13 @@ class ViewController: UIviewController, CustomViewDelegate {
    // protocol을 통해 메소드를 정의 해준다. func textChang는 실제 구현할 함수를 미리 정의.
    
    
-   class ViewController: UIViewController, UITextFieldDelegate, SecondViewDelegate {
+   class ViewController: UIViewController, UITextFieldDelegate {
        weak var delegate : ViewControllerDelegate?
      // ViewControllerDelegate 타입의 delegate 변수 선언. (여기서는 아직 ViewControllerDelegate를 채택해서 쓰겠다고 하지 않은 상태임!)
        
-       @IBOutlet weak var secondLabel: UILabel!
        @IBOutlet weak var textField: UITextField!
+     
+    // FirstVC 에 있는 textField를 @IBOulet으로 연결
        
        override func viewDidLoad() {
            super.viewDidLoad()
