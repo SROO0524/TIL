@@ -75,7 +75,63 @@
 
 
 
+## 	Auto Layout tools
 
+
+
+
+
+![AutoLayout_4](/Users/kimmidum/Desktop/AutoLayout_4.png)
+
+* **Update Frames** : 제약조건과 맞지 않는 뷰 위치 갱신 
+
+* **Align** : 정렬에 관한 제약사항 설정
+
+* **Pin** : 간격, 크기, 비율 등에 대한 제약 조건 설정
+
+* **Resolve Autolayout Issues** : 오토레이아웃 관련 문제 해결 
+* **Embed In** : 컨테이너 뷰 / 뷰컨트롤러 추가
+
+
+
+
+
+## Align Tool 
+
+* **Align** : 정렬에 관한 제약사항 설정
+
+![AutoLayout_5](/Users/kimmidum/Documents/TIL/Image/AutoLayout_5.png)
+
+
+
+## Pin Tool 
+
+* **Pin** : 간격, 크기, 비율 등에 대한 제약 조건 설정
+
+![AutoLayout_6](/Users/kimmidum/Documents/TIL/Image/AutoLayout_6.png)
+
+## **Resolve Auto Layout Issues Tool**
+
+* 되도록이면 안쓰는게 좋음
+
+![AutoLayout_7](/Users/kimmidum/Documents/TIL/Image/AutoLayout_7.png)
+
+## **Auto Layout Attributes**
+
+* leading : 글자를 읽을 때 시작하는 부분(언어에 따라 달라진다. 대부분은 왼쪽/아랍권은 오른쪽)
+* Trailing : 글자가 끝나는 부분(대부분은 오른쪽)
+
+![iOS] 오토레이아웃(AutoLayout)과 Layout 개념 - jinShine](https://i.imgur.com/mVw3gM8.png)
+
+
+
+
+
+##  Constraint
+
+* 각 뷰와 연결된 관계를 말함
+
+![AutoLayout_8](/Users/kimmidum/Documents/TIL/Image/AutoLayout_8.png)
 
 
 
