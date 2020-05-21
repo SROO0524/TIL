@@ -34,25 +34,35 @@ class ViewController: UIViewController {
         calculator()
     }
     
+    @IBAction func resetButtonClicked(_ sender: UIButton){
+        resultLabel.text = "Label"
+        firstNumField.text = nil
+        opField.text = nil
+        secondNumField.text = nil
+    }
+    
     func calculator() {
-        var sum : Int
         guard let first = firstNumField.text else {return}
         guard let firstNum = Int(first) else { return }
         guard let second = secondNumField
             .text else {return}
         guard let secondNum = Int(second) else {return}
         
-        if opField.text == "+" {
-           sum = firstNum + secondNum
-        }else if opField.text == "-" {
-            sum = firstNum - secondNum
-        }else if opField.text == "*" {
-            sum = firstNum * secondNum
-        }else {
-            sum = firstNum / secondNum
+        if opField.text != nil{
+            if opField.text == "+" {
+                lastNum = firstNum + secondNum
+            }else if opField.text == "-" {
+                lastNum = firstNum - secondNum
+            }else if opField.text == "*" {
+                lastNum = firstNum * secondNum
+            }else if opField.text == "/" {
+                lastNum = firstNum / secondNum
+            }else {
+               return resultLabel.text = "Label"
+            }
+            resultLabel.text = String(lastNum)
         }
-        resultLabel.text = String(sum)
-        
     }
 }
+
 
