@@ -23,16 +23,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     
-    @IBOutlet weak var number0Button: UIButton!
-    @IBOutlet weak var number1Button: UIButton!
-    @IBOutlet weak var number2Button: UIButton!
-    @IBOutlet weak var number3Button: UIButton!
-    @IBOutlet weak var number4Button: UIButton!
-    @IBOutlet weak var number5Button: UIButton!
-    @IBOutlet weak var number6Button: UIButton!
-    @IBOutlet weak var number7Button: UIButton!
-    @IBOutlet weak var number8Button: UIButton!
-    @IBOutlet weak var number9Button: UIButton!
     
     @IBOutlet weak var plusButton : UIButton!
     @IBOutlet weak var minusButton : UIButton!
@@ -76,28 +66,36 @@ class ViewController: UIViewController {
                 lastNum = firstNum + secondNum
             }else if opField.text == "-" {
                 lastNum = firstNum - secondNum
-            }else if opField.text == "*" {
+            }else if opField.text == "✕" {
                 lastNum = firstNum * secondNum
-            }else if opField.text == "/" {
+            }else if opField.text == "⁒" {
                 lastNum = firstNum / secondNum
             }else {
                return resultLabel.text = nil
             }
             resultLabel.text = String(lastNum)
         }
-        
+    
     }
 
-    @IBAction func numberButtonClicked(_ sender: Any) {
-        guard let input = sender.currenttitle
-            }
-    
-    @IBAction func operatorButtonClicked(_ sender: Any){
+    @IBAction func numberButtonClicked(_ btn: UIButton){
+        let numBtn = btn.titleLabel?.text
+        var lastFieldNum = firstNumField.text
+        var lastScFieldNum = secondNumField.text
         
         
+        if opField.text == "" {
+            firstNumField.text = lastFieldNum! + numBtn!
+        } else {
+            secondNumField.text = lastScFieldNum! + numBtn!
+        }
         
+    }
         
-        
+    @IBAction func operatorButtonClicked(_ btn: UIButton){
+        let opBtn = btn.titleLabel?.text
+        opField.text = opBtn
+ 
     }
     
     
