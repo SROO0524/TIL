@@ -32,6 +32,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //   MARK: 두번 클릭했을 때의 UI제스처 정의
         let tap = UITapGestureRecognizer(target: self, action: #selector(resetTap))
         tap.numberOfTapsRequired = 2
@@ -43,17 +44,17 @@ class ViewController: UIViewController {
         reset()
     }
     
-    
+//    MARK: "=" Action
     @IBAction func equalButtonClicked(_ sender: UIButton){
         print(#function)
         calculator()
         
     }
-    
+//    MARK: "Reset" Action
     @IBAction func resetButtonClicked(_ sender: UIButton){
       reset()
     }
-    
+//    MARK: "=" 사칙연산 함수
     func calculator() {
         guard let first = firstNumField.text else {return}
         guard let firstNum = Int(first) else { return }
@@ -77,7 +78,7 @@ class ViewController: UIViewController {
         }
     
     }
-
+//    MARK: 숫자버튼 Action
     @IBAction func numberButtonClicked(_ btn: UIButton){
         let numBtn = btn.titleLabel?.text
         var lastFieldNum = firstNumField.text
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
         }
         
     }
-        
+//    MARK: 사칙연산버튼 Action
     @IBAction func operatorButtonClicked(_ btn: UIButton){
         let opBtn = btn.titleLabel?.text
         opField.text = opBtn
@@ -99,7 +100,7 @@ class ViewController: UIViewController {
     }
     
     
-//    MARK: reset 함수
+//    MARK: Reset 함수
  
     func reset() {
         
