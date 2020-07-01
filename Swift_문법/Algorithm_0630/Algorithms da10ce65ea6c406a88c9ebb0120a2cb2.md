@@ -276,3 +276,20 @@ isSuccess ? print("정렬 완료") : testCases()
 - **시간복잡도 - 항상 O(nLogn)**
 
 ![Algorithms%20da10ce65ea6c406a88c9ebb0120a2cb2/_2020-06-30__5.08.47.png](Algorithms%20da10ce65ea6c406a88c9ebb0120a2cb2/_2020-06-30__5.08.47.png)
+
+
+
+## ***Comparison***
+
+![https://i.gifer.com/Bnha.gif](https://i.gifer.com/Bnha.gif)
+
+## ***Swift Sorting Algorithm***
+
+[ Swift 기본 정렬 알고리즘 ] - Intro Sort (Insertion Sort + Quick Sort + Heap Sort) 
+
+**􏰀 - Timsort (Insertion Sort + Merge Sort)** 
+
+**[ 참고 링크 ]** 
+
+**- https://github.com/apple/swift/blob/master/stdlib/public/core/Sort.swift  - https://github.com/apple/swift/commit/e5c1567957e8bd159beb7ef21f5fbb25bebf34e8#diff-
+d8682241e4e146bde02399e918c36837**
